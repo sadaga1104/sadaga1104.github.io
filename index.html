@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css"/>
+    <title>LP Analista de Datos</title>
+</head>
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/LP/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>  
+                      </ul>
+                    </nav>
+                    <!--ICONOS DEL MENU RESPONSIVE-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Joaquin Vega</span>, Analista de Datos-Programador Junior</h2>
+                <p class="descripcion">Hola, soy Joaquín Vega, estudie sistemas en el Sena y realice mis
+                     practicas en la empresa multinacional Atento teleservicios, desempeñandome en 
+                    labores de apoyo en el departamento de analisis de datos y programación la cual fue 
+                    una experiencia maravillosa y productiva para ambas partes.
+                </p>
+                <a href="#portafolio">Ir a portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="mi_foto.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Joaquin Vega</span></h2>
+            <h3>Analista de datos y Desarrollador Junior</h3>
+            <p>Soy tecnólogo en electricidad y telecomunicaciones de la UTS 
+                y tec. en sistemas del Sena, tengo tres hermosos hijos, vivo 
+                en Floridablanca, Santander.
+            </p>
+            <p>Desde que empece mis practicas en Atento he incursionado vertiginosamente
+                en el mundo de la programación y el data-science lo cual me ha encantado,  
+                además por mi parte estoy en una continua capacitación en varios lenguajes
+                de programación.
+            </p>
+            <a href="Joaquin_Vega_CV_2.pdf">Descargar CV</a>
+        </div>
+    </section>
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <!--div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de sitios web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Cupiditate animi</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de sitios web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Cupiditate animi</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de sitios web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Cupiditate animi</p>
+            </div>
+        </div>-->
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de sitios web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Diseño web, usando html, css, Js, para la creación de contenido 
+                    digital totalmente responsive.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Webscraping para descarga de información de la web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>descarga de datos, limpieza de los mismos y realización de informes
+                    con el comportamiento de dicha información si el caso lo requiere.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Mantenimiento de equipos de computo</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Realizo mantenimiento y limpieza del hardware e instalación de 
+                    software según requerimientos del cliente.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION HABLIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">Basico</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">Basico</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Webscraping</p>
+                <span class="porcentaje">Intermedio</span>
+            </div>
+            <div class="barra">
+                <div id="Ws" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Python</p>
+                <span class="porcentaje">Intermedio</span>
+            </div>
+            <div class="barra">
+                <div id="py" class="barra-progreso4"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>C++</p>
+                <span class="porcentaje">Intermedio</span>
+            </div>
+            <div class="barra">
+                <div id="cpp" class="barra-progreso5"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>MYSQL</p>
+                <span class="porcentaje">Basico</span>
+            </div>
+            <div class="barra">
+                <div id="mysql" class="barra-progreso6"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="portafolio.png" alt="">
+                <div class="info">
+                    <h4>Portafolio personal hecho con html, css y js.</h4>
+                    <p>Diseño web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="webscraping.PNG" alt="">
+                <div class="info">
+                    <h4>Blog hecho con html y css</h4>
+                    <p>Diseño web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="juego_quiz.PNG" alt="">
+                <div class="info">
+                    <h4>Juego de capitales a base de html, css y JS</h4>
+                    <p>Diseño web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="webscraping_selenium.PNG" alt="">
+                <div class="info">
+                    <h4>Automatización que se logea en twiter y extrae información</h4>
+                    <p>Webscraping</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="Cajero.PNG" alt="">
+                <div class="info">
+                    <h4>Emulador de cajero automatico hecho con html y Javascript</h4>
+                    <p>Diseño web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="calculadora_imc.PNG" alt="">
+                <div class="info">
+                    <h4>Script en python para calcular el indice de masa corporal (IMC)</h4>
+                    <p>Diseño web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <a href="mailto:joaquin.vega@misena.edu.co">Contáctame aquí</a>
+        <!--<div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>-->
+    </section>
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
