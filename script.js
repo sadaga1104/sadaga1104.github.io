@@ -38,13 +38,3 @@ function efectoHabilidades(){
         document.getElementById("mysql").classList.add("barra-progreso6");
     }
 } 
-const btnEnvio = document.getElementById("enviarCorreo");  
-
-btnEnvio.addEventListener('click', function(e) {
-    e.preventDefault();
-    const nombre = document.getElementById("nombre").value;
-    const email = document.getElementById("email").value;
-    const tema = document.getElementById("tema").value;
-    const mensaje = document.getElementById("mensaje").value;
-    window.location.href='mailto:joaquin.vega@misena.edu.co?subject=envioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A${email}%0ATema%3A${tema}%0AMensaje%3A${mensaje}';
-});

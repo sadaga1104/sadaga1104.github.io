@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilo.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css" />
     <title>LP Analista de Datos</title>
 </head>
+
 <body>
     <!--SECCION INICIO-->
     <section id="inicio">
@@ -21,8 +25,8 @@
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
                             <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
                             <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>  
-                      </ul>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
                     </nav>
                     <!--ICONOS DEL MENU RESPONSIVE-->
                     <div id="icono-nav" onclick="responsiveMenu()">
@@ -40,8 +44,8 @@
                 <p class="bienvenida">Bienvenidos</p>
                 <h2>Soy <span>Joaquin Vega</span>, Analista de Datos-Programador Junior</h2>
                 <p class="descripcion">Hola, soy Joaquín Vega, estudie sistemas en el Sena y realice mis
-                     practicas en la empresa multinacional Atento teleservicios, desempeñandome en 
-                    labores de apoyo en el departamento de analisis de datos y programación la cual fue 
+                    practicas en la empresa multinacional Atento teleservicios, desempeñandome en
+                    labores de apoyo en el departamento de analisis de datos y programación la cual fue
                     una experiencia maravillosa y productiva para ambas partes.
                 </p>
                 <a href="#portafolio">Ir a portafolio</a>
@@ -58,12 +62,12 @@
             <p class="titulo-seccion">Sobre Mi</p>
             <h2>Hola, soy <span>Joaquin Vega</span></h2>
             <h3>Analista de datos y Desarrollador Junior</h3>
-            <p>Soy tecnólogo en electricidad y telecomunicaciones de la UTS 
-                y tec. en sistemas del Sena, tengo tres hermosos hijos, vivo 
+            <p>Soy tecnólogo en electricidad y telecomunicaciones de la UTS
+                y tec. en sistemas del Sena, tengo tres hermosos hijos, vivo
                 en Floridablanca, Santander.
             </p>
             <p>Desde que empece mis practicas en Atento he incursionado vertiginosamente
-                en el mundo de la programación y el data-science lo cual me ha encantado,  
+                en el mundo de la programación y el data-science lo cual me ha encantado,
                 además por mi parte estoy en una continua capacitación en varios lenguajes
                 de programación.
             </p>
@@ -121,7 +125,7 @@
                     <li>Graphic</li>
                     <li>SEO</li>
                 </ul>
-                <p>Diseño web, usando html, css, Js, para la creación de contenido 
+                <p>Diseño web, usando html, css, Js, para la creación de contenido
                     digital totalmente responsive.
                 </p>
             </div>
@@ -147,7 +151,7 @@
                     <li>Graphic</li>
                     <li>SEO</li>
                 </ul>
-                <p>Realizo mantenimiento y limpieza del hardware e instalación de 
+                <p>Realizo mantenimiento y limpieza del hardware e instalación de
                     software según requerimientos del cliente.
                 </p>
             </div>
@@ -269,7 +273,7 @@
             </div>
         </div>
         <div class="fila">
-            
+
         </div>
     </section>
 
@@ -278,20 +282,27 @@
         <h3 class="titulo-seccion">Contactame ahora</h3>
         <a href="mailto:joaquin.vega@misena.edu.co">Contáctame aquí</a>
         <div class="contenedor-form">
-            <form action="" id="formulario-contacto">
+            <form action="" id="form">
                 <div class="fila mitad">
-                    <input id="nombre" type="text" placeholder="Nombre Completo" class="input-mitad">
-                    <input id="email" type="text" placeholder="Dirección de Email" class="input-mitad">
+                    <input name="nombre" id="nombre" type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input name="email" id="email" type="text" placeholder="Dirección de Email" class="input-mitad">
                 </div>
                 <div class="fila">
-                    <input id="tema" type="text" placeholder="Tema..." class="input-full">
+                    <input name="tema" id="tema" type="text" placeholder="Tema..." class="input-full">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
                 </div>
 
-                <input id="enviaCorreo" type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <input name="enviar" id="button" type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('YRB0qE35zpgXq56oD')
+            </script>
         </div>
     </section>
     <!--SECCION FOOTER-->
@@ -305,5 +316,28 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Enviando...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_rurmnhv';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Enviar Mensaje';
+                        alert('Mensaje enviado correctamente!');
+                    }, (err) => {
+                        btn.value = 'Enviar Mensaje';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script>
 </body>
+
 </html>
