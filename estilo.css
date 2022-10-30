@@ -353,6 +353,7 @@ de la barra*/
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
+    max-width: 100%;
 }
 #portafolio .fila .proyecto {
     max-width: 100%;
