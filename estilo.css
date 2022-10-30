@@ -355,7 +355,7 @@ de la barra*/
     margin: 30px 0;
 }
 #portafolio .fila .proyecto {
-    max-width: 450px;
+    max-width: 100%;
     border: 1px solid #000;
     margin: 0 10px;
     position: relative;
